@@ -61,39 +61,41 @@ a:hover {
     color: #fff;
 }
 
-.listings {
+#listings {
     height: 100%;
     overflow: auto;
     padding-bottom: 60px;
 }
 
-.listings .item {
+#listings .item {
     display: block;
-    border-bottom: 1px solid #eee;
     padding: 10px;
     text-decoration: none;
+    border-bottom: 1px solid #eee;
+    border-top: 2px solid #00c200;
+    margin-bottom: 2em;
 }
 
-.listings .item:last-child {
+#listings .item:last-child {
     border-bottom: none;
 }
 
-.listings .item .title {
+#listings .item .title {
     display: block;
     color: #00853e;
     font-weight: 700;
 }
 
-.listings .item .title small {
+#listings .item .title small {
     font-weight: 400;
 }
 
-.listings .item.active .title,
-.listings .item .title:hover {
+#listings .item.active .title,
+#listings .item .title:hover {
     color: #8cc63f;
 }
 
-.listings .item.active {
+#listings .item.active {
     background-color: #f8f8f8;
 }
 

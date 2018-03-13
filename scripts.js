@@ -110,10 +110,10 @@ function buildLocationList(data) {
 		link.dataPosition = i;
 		link.innerHTML = prop.address;
 
-		var details = listing.appendChild(document.createElement('div'));
+		var details = link.appendChild(document.createElement('div'));
 		details.innerHTML = prop.city;
 		if (prop.phone) {
-			details.innerHTML += ' · ' + prop.phoneFormatted;
+			details.innerHTML += ' · ' + prop.phone;
 		}
 
 
