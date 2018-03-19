@@ -69,11 +69,11 @@ stores.features.forEach(function(marker, i) {
   });
 });
 
-map.addControl(
-  new MapboxGeocoder({
-    accessToken: mapboxgl.accessToken
-  })
-);
+const geocoder = new MapboxGeocoder({
+  accessToken: mapboxgl.accessToken
+});
+
+map.addControl(geocoder);
 
 function flyToStore(currentFeature) {
   map.flyTo({
